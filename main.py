@@ -4,8 +4,7 @@ import json
 from keep_alive import keep_alive
 keep_alive()
 
-CHANNEL_NAME = "🐦┃листування"
-REQUIRED_ROLE_ID = 1152566528907149342
+CHANNEL_NAME = "загальний"
 
 def load_config():
     with open('config.json', 'r', encoding='utf-8') as f:
@@ -40,10 +39,6 @@ async def on_ready():
 
 @client.event
 async def on_presence_update(before: discord.Member, after: discord.Member):
-    required_role = discord.utils.get(after.roles, id=REQUIRED_ROLE_ID)
-    if not required_role:
-        return
-        
     channel = discord.utils.get(after.guild.text_channels, name=CHANNEL_NAME)
 
     current_game = None

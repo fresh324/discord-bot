@@ -4,7 +4,7 @@ import json
 from keep_alive import keep_alive
 keep_alive()
 
-CHANNEL_NAME = "загальний"
+CHANNEL_NAME = "📩┃листування"
 
 def load_config():
     with open('config.json', 'r', encoding='utf-8') as f:

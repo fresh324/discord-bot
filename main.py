@@ -4,8 +4,8 @@ import json
 from keep_alive import keep_alive
 keep_alive()
 
-CHANNEL_NAME = "📩┃листування"
-REQUIRED_ROLE_ID =
+CHANNEL_NAME = "⚠порушення"
+REQUIRED_ROLE_ID = 1196795202447355915
 
 def load_config():
     with open('config.json', 'r', encoding='utf-8') as f:
